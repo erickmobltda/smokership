@@ -1,0 +1,58 @@
+{
+  "app": { "tagline": "Discover, rate and keep track of your cigars." },
+  "nav": { "discover": "Discover", "humidor": "Humidor", "feed": "Feed", "profile": "Profile" },
+  "common": { "loading": "Loading…", "save": "Save", "delete": "Delete", "back": "Back", "clear": "Clear", "error": "Something went wrong. Try again." },
+  "auth": {
+    "signIn": "Sign in", "signOut": "Sign out", "email": "Email", "password": "Password",
+    "error": "Wrong email or password.", "inviteOnly": "Smokership is invite-only for now."
+  },
+  "age": {
+    "question": "Smokership is for adults. Are you 18 or older?",
+    "yes": "I'm 18 or older", "no": "No",
+    "refused": "Sorry, Smokership is only for adults.",
+    "warning": "Smoking is harmful to your health."
+  },
+  "discover": {
+    "title": "Discover", "subtitle": "{{count}} cigars to explore",
+    "placeholder": "Search by name, country, wrapper…", "filters": "Filters",
+    "clearFilters": "Clear filters", "results": "{{count}} results",
+    "empty": "No cigar matches. Try fewer words or filters.", "more": "Show more"
+  },
+  "strength": { "Mild": "Mild", "Mild-Medium": "Mild-medium", "Medium": "Medium", "Medium-Full": "Medium-full", "Full": "Full" },
+  "cigar": {
+    "notFound": "We couldn't find this cigar.", "caScore": "Best CA score",
+    "community": "{{avg}} from {{count}} tastings", "rate": "Rate", "editRating": "Edit my rating",
+    "wish": "Wish list", "wished": "On wish list", "addHumidor": "Add to humidor",
+    "inHumidor_one": "{{count}} in humidor", "inHumidor_other": "{{count}} in humidor",
+    "specs": "Specs", "size": "Size", "length": "Length", "gauge": "Ring gauge", "strength": "Strength",
+    "wrapper": "Wrapper", "binder": "Binder", "filler": "Filler", "country": "Country",
+    "allScores": "Cigar Aficionado scores over the years: {{scores}}",
+    "tastings": "Tastings", "noTastings": "No tastings yet. Be the first.", "signInToSee": "to see tastings."
+  },
+  "rate": {
+    "title": "Your tasting", "tapStars": "Tap a star; tap again for a half",
+    "flavors": "Flavours (up to 6)", "smokedOn": "Smoked on", "notes": "Notes",
+    "notesPlaceholder": "Draw, burn, how it changed…", "saved": "Tasting saved"
+  },
+  "flavor": {
+    "earth": "Earth", "wood": "Wood", "leather": "Leather", "spice": "Spice", "pepper": "Pepper",
+    "cedar": "Cedar", "coffee": "Coffee", "cocoa": "Cocoa", "nuts": "Nuts", "cream": "Cream",
+    "sweet": "Sweet", "fruit": "Fruit", "floral": "Floral", "grass": "Grass", "toast": "Toast", "honey": "Honey"
+  },
+  "humidor": {
+    "title": "My humidor", "summary": "{{count}} cigars, {{kinds}} kinds",
+    "tabHumidor": "Humidor", "tabWish": "Wish list", "tabTasted": "Tasted",
+    "emptyHumidor": "Your humidor is empty.", "emptyWish": "Nothing on your wish list.",
+    "emptyTasted": "You haven't rated a cigar yet.", "since": "since {{date}}"
+  },
+  "feed": {
+    "title": "Feed", "subtitle": "Latest tastings from the community.",
+    "empty": "No tastings yet.", "smoked": "smoked"
+  },
+  "profile": {
+    "title": "Profile", "inHumidor": "In humidor", "tasted": "Tasted", "wished": "Wished",
+    "displayName": "Display name", "displayNameHint": "Shown on your tastings from now on.",
+    "saved": "Profile saved",
+    "credits": "Scores and specs from Cigar Aficionado reviews, collected in 2021."
+  }
+}
