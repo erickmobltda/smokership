@@ -1,0 +1,119 @@
+{
+  "profile": {
+    "main": {
+      "displayName": "Demo"
+    }
+  },
+  "humidor": {
+    "ca8": {
+      "cigarId": "ca8",
+      "quantity": 3,
+      "addedAt": "2026-06-10T18:00:00.000Z"
+    },
+    "ca4594": {
+      "cigarId": "ca4594",
+      "quantity": 2,
+      "addedAt": "2026-07-02T18:00:00.000Z"
+    },
+    "ca1044": {
+      "cigarId": "ca1044",
+      "quantity": 5,
+      "addedAt": "2026-08-15T18:00:00.000Z"
+    },
+    "ca14680": {
+      "cigarId": "ca14680",
+      "quantity": 1,
+      "addedAt": "2026-09-01T18:00:00.000Z"
+    }
+  },
+  "wishlist": {
+    "ca12890": {
+      "cigarId": "ca12890",
+      "addedAt": "2026-08-20T18:00:00.000Z"
+    },
+    "ca18103": {
+      "cigarId": "ca18103",
+      "addedAt": "2026-09-12T18:00:00.000Z"
+    },
+    "ca14975": {
+      "cigarId": "ca14975",
+      "addedAt": "2026-10-03T18:00:00.000Z"
+    }
+  },
+  "ratings": {
+    "ca8": {
+      "uid": "demo",
+      "displayName": "Demo",
+      "cigarId": "ca8",
+      "stars": 4.5,
+      "flavors": [
+        "cedar",
+        "cream",
+        "honey"
+      ],
+      "notes": "Smooth from the first third, creamy with a touch of honey. Perfect draw.",
+      "smokedOn": "2026-06-14",
+      "createdAt": "2026-06-14T22:30:00.000Z",
+      "updatedAt": "2026-06-14T22:30:00.000Z"
+    },
+    "ca543": {
+      "uid": "demo",
+      "displayName": "Demo",
+      "cigarId": "ca543",
+      "stars": 4,
+      "flavors": [
+        "earth",
+        "cocoa",
+        "spice"
+      ],
+      "notes": "Classic torpedo. Gets spicier in the last third.",
+      "smokedOn": "2026-07-05",
+      "createdAt": "2026-07-05T22:30:00.000Z",
+      "updatedAt": "2026-07-05T22:30:00.000Z"
+    },
+    "ca4594": {
+      "uid": "demo",
+      "displayName": "Demo",
+      "cigarId": "ca4594",
+      "stars": 5,
+      "flavors": [
+        "cocoa",
+        "coffee",
+        "nuts"
+      ],
+      "notes": "Chocolate and espresso all the way. Razor-sharp burn.",
+      "smokedOn": "2026-08-09",
+      "createdAt": "2026-08-09T22:30:00.000Z",
+      "updatedAt": "2026-08-09T22:30:00.000Z"
+    },
+    "ca178": {
+      "uid": "demo",
+      "displayName": "Demo",
+      "cigarId": "ca178",
+      "stars": 3.5,
+      "flavors": [
+        "wood",
+        "grass"
+      ],
+      "notes": "Mild and a bit grassy; good for a long afternoon.",
+      "smokedOn": "2026-09-02",
+      "createdAt": "2026-09-02T22:30:00.000Z",
+      "updatedAt": "2026-09-02T22:30:00.000Z"
+    },
+    "ca9": {
+      "uid": "demo",
+      "displayName": "Demo",
+      "cigarId": "ca9",
+      "stars": 4,
+      "flavors": [
+        "leather",
+        "pepper",
+        "toast"
+      ],
+      "notes": "Robust with leather and pepper. Pairs well with rum.",
+      "smokedOn": "2026-10-18",
+      "createdAt": "2026-10-18T22:30:00.000Z",
+      "updatedAt": "2026-10-18T22:30:00.000Z"
+    }
+  }
+}
