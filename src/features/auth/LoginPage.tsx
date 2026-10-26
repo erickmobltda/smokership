@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { auth } from '@/lib/firebase';
+import { auth, DEMO_EMAIL, DEMO_PASSWORD } from '@/lib/firebase';
 import { toast } from '@/components/ui/toast';
 import { Logo } from '@/components/Logo';
 
@@ -17,17 +17,17 @@ export function LoginPage() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [loading, setLoading] = React.useState(false);
+  const [loadingDemo, setLoadingDemo] = React.useState(false);
 
-  async function submit(e: React.FormEvent) {
-    e.preventDefault();
-    setLoading(true);
+  async function signIn(withEmail: string, withPassword: string, setBusy: (v: boolean) => void) {
+    setBusy(true);
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, withEmail, withPassword);
       navigate(from, { replace: true });
     } catch {
       toast.error(t('auth.error'));
     } finally {
-      setLoading(false);
+      setBusy(false);
     }
   }
 
@@ -42,7 +42,13 @@ export function LoginPage() {
           <CardDescription>{t('auth.inviteOnly')}</CardDescription>
         </CardHeader>
         <CardContent>
-          <form className="space-y-3" onSubmit={submit}>
+          <form
+            className="space-y-3"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void signIn(email, password, setLoading);
+            }}
+          >
             <div className="space-y-2">
               <Label htmlFor="email">{t('auth.email')}</Label>
               <Input id="email" type="email" autoComplete="email" inputMode="email" value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -55,6 +61,13 @@ export function LoginPage() {
               {loading ? t('common.loading') : t('auth.signIn')}
             </Button>
           </form>
+
+          <div className="mt-4 border-t pt-4">
+            <Button variant="outline" className="w-full" onClick={() => void signIn(DEMO_EMAIL, DEMO_PASSWORD, setLoadingDemo)} disabled={loadingDemo}>
+              {loadingDemo ? t('common.loading') : t('auth.demoButton')}
+            </Button>
+            <p className="mt-2 text-center text-xs text-muted-foreground">{t('auth.demoHint')}</p>
+          </div>
         </CardContent>
       </Card>
     </div>

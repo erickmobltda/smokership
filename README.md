@@ -14,6 +14,18 @@ Discover, rate and keep track of your cigars. A revival of the 2021 Smokership a
 
 Sign-up is off (shared Firebase project): accounts are created in the Firebase console.
 
+## Live demo
+
+Click **Try the demo** on the login page of https://smokership.erickmob.dev. It signs in with `demo@ledgenator.app` / `demo1234`, the public sandbox account shared by the erickmob apps, with a sample humidor, wish list and five tastings.
+
+The demo's tastings stay in its own data (`apps/smokership/users/{uid}/ratings/{cigarId}`), so they never show up in anyone's feed, and its feed and cigar pages show only its own tastings; the rules keep it out of the shared `ratings`. It's a **shared sandbox**: anyone can sign in and change it. To restore it:
+
+```bash
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/firebase-sa.json npm run reset-demo
+```
+
+It replaces the demo account's `profile`, `humidor`, `wishlist` and `ratings` with `scripts/demo-seed.json` (and restores its password and `demo` claim).
+
 ## Stack
 
 - React 18, Vite, TypeScript, Tailwind, TanStack Query, i18next

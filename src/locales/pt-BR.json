@@ -4,7 +4,8 @@
   "common": { "loading": "Carregando…", "save": "Salvar", "delete": "Excluir", "back": "Voltar", "clear": "Limpar", "error": "Algo deu errado. Tente de novo." },
   "auth": {
     "signIn": "Entrar", "signOut": "Sair", "email": "E-mail", "password": "Senha",
-    "error": "E-mail ou senha incorretos.", "inviteOnly": "Por enquanto o Smokership é só para convidados."
+    "error": "E-mail ou senha incorretos.", "inviteOnly": "Por enquanto o Smokership é só para convidados.",
+    "demoButton": "Testar a conta demo", "demoHint": "Explore um umidor de exemplo — sem precisar criar conta."
   },
   "age": {
     "question": "O Smokership é para adultos. Você tem 18 anos ou mais?",

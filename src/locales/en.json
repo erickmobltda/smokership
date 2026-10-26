@@ -4,7 +4,8 @@
   "common": { "loading": "Loading…", "save": "Save", "delete": "Delete", "back": "Back", "clear": "Clear", "error": "Something went wrong. Try again." },
   "auth": {
     "signIn": "Sign in", "signOut": "Sign out", "email": "Email", "password": "Password",
-    "error": "Wrong email or password.", "inviteOnly": "Smokership is invite-only for now."
+    "error": "Wrong email or password.", "inviteOnly": "Smokership is invite-only for now.",
+    "demoButton": "Try the demo", "demoHint": "Explore a sample humidor — no sign-up needed."
   },
   "age": {
     "question": "Smokership is for adults. Are you 18 or older?",
