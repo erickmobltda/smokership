@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { collection, doc, getFirestore } from 'firebase/firestore';
+import { connectAuthEmulator, getAuth } from 'firebase/auth';
+import { collection, connectFirestoreEmulator, doc, getFirestore } from 'firebase/firestore';
+import { niche } from '@/niche/config';
 
 const app = initializeApp({
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY as string,
@@ -12,38 +13,39 @@ const app = initializeApp({
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 
+// Local development against `firebase emulators:start --only auth,firestore` (README).
+if (import.meta.env.DEV && import.meta.env.VITE_USE_EMULATORS === 'true') {
+  connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
+  connectFirestoreEmulator(db, '127.0.0.1', 8080);
+}
+
 // Public sandbox account shared by the erickmob apps (custom claim `demo`).
-// Restore its sample humidor and tastings with `npm run reset-demo`.
+// Restore its sample data with `npm run reset-demo`.
 export const DEMO_EMAIL = 'demo@ledgenator.app';
 export const DEMO_PASSWORD = 'demo1234';
 
-const isDemo = () => auth.currentUser?.email === DEMO_EMAIL;
+export type ListName = 'owned' | 'wishlist';
 
-export function currentUid(): string {
-  const uid = auth.currentUser?.uid;
-  if (!uid) throw new Error('Not authenticated');
-  return uid;
-}
+// Every Firestore path of the app is built here (collector-app-blueprint docs/03).
+// Private data: apps/<APP>/users/{uid}. Shared: profiles, handles, collections,
+// ratings (+ likes), follows. The demo keeps its ratings in users/{uid}/ratings.
+const A = ['apps', niche.app] as const;
 
-export type UserCollection = 'profile' | 'humidor' | 'wishlist';
-
-// Private data lives under apps/smokership/users/{uid}. Ratings are shared
-// (apps/smokership/ratings/{uid}_{cigarId}) so the feed and the cigar page can
-// show everyone's tastings. The catalog is a static file (public/catalog.json).
-export const userCollection = (name: UserCollection) =>
-  collection(db, 'apps', 'smokership', 'users', currentUid(), name);
-
-export const userDoc = (name: UserCollection, id: string) =>
-  doc(db, 'apps', 'smokership', 'users', currentUid(), name, id);
-
-// The demo account keeps its tastings in its own data (users/{uid}/ratings/{cigarId}):
-// they stay out of everyone's feed, and its feed shows only its own.
-export const ratingsCollection = () =>
-  isDemo()
-    ? collection(db, 'apps', 'smokership', 'users', currentUid(), 'ratings')
-    : collection(db, 'apps', 'smokership', 'ratings');
-
-export const ratingDoc = (cigarId: string) =>
-  isDemo()
-    ? doc(db, 'apps', 'smokership', 'users', currentUid(), 'ratings', cigarId)
-    : doc(db, 'apps', 'smokership', 'ratings', `${currentUid()}_${cigarId}`);
+export const paths = {
+  settings: (uid: string) => doc(db, ...A, 'users', uid, 'settings', 'main'),
+  profiles: () => collection(db, ...A, 'profiles'),
+  profile: (uid: string) => doc(db, ...A, 'profiles', uid),
+  handles: () => collection(db, ...A, 'handles'),
+  handle: (handle: string) => doc(db, ...A, 'handles', handle),
+  list: (uid: string, list: ListName) => collection(db, ...A, 'collections', uid, list),
+  listItem: (uid: string, list: ListName, itemId: string) => doc(db, ...A, 'collections', uid, list, itemId),
+  ratings: () => collection(db, ...A, 'ratings'),
+  rating: (uid: string, itemId: string) => doc(db, ...A, 'ratings', `${uid}_${itemId}`),
+  ratingById: (id: string) => doc(db, ...A, 'ratings', id),
+  likes: (ratingId: string) => collection(db, ...A, 'ratings', ratingId, 'likes'),
+  like: (ratingId: string, uid: string) => doc(db, ...A, 'ratings', ratingId, 'likes', uid),
+  follows: () => collection(db, ...A, 'follows'),
+  follow: (follower: string, followee: string) => doc(db, ...A, 'follows', `${follower}_${followee}`),
+  demoRatings: (uid: string) => collection(db, ...A, 'users', uid, 'ratings'),
+  demoRating: (uid: string, itemId: string) => doc(db, ...A, 'users', uid, 'ratings', itemId),
+};

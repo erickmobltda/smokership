@@ -8,6 +8,9 @@
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "i18n:check": "node scripts/i18n-check.mjs",
     "catalog": "python3 scripts/build_catalog.py",
     "reset-demo": "node scripts/reset-demo.mjs"
   },
@@ -31,15 +34,21 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@eslint/js": "^9.12.0",
     "@types/node": "^22.7.4",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
+    "eslint": "^9.12.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "firebase-admin": "^13.10.0",
+    "globals": "^15.11.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
-    "vite": "^5.4.8"
+    "typescript-eslint": "^8.8.1",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.3"
   }
 }

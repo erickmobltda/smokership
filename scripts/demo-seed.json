@@ -1,119 +1,105 @@
 {
-  "profile": {
-    "main": {
-      "displayName": "Demo"
-    }
-  },
-  "humidor": {
+  "collections/owned": {
     "ca8": {
-      "cigarId": "ca8",
+      "itemId": "ca8",
       "quantity": 3,
-      "addedAt": "2026-06-10T18:00:00.000Z"
+      "visible": true,
+      "addedAt": "2026-06-10T18:00:00.000Z",
+      "updatedAt": "2026-06-10T18:00:00.000Z"
     },
     "ca4594": {
-      "cigarId": "ca4594",
+      "itemId": "ca4594",
       "quantity": 2,
-      "addedAt": "2026-07-02T18:00:00.000Z"
+      "visible": true,
+      "addedAt": "2026-07-02T18:00:00.000Z",
+      "updatedAt": "2026-07-02T18:00:00.000Z"
     },
     "ca1044": {
-      "cigarId": "ca1044",
+      "itemId": "ca1044",
       "quantity": 5,
-      "addedAt": "2026-08-15T18:00:00.000Z"
+      "visible": true,
+      "addedAt": "2026-08-15T18:00:00.000Z",
+      "updatedAt": "2026-08-15T18:00:00.000Z"
     },
     "ca14680": {
-      "cigarId": "ca14680",
+      "itemId": "ca14680",
       "quantity": 1,
-      "addedAt": "2026-09-01T18:00:00.000Z"
+      "visible": true,
+      "addedAt": "2026-09-01T18:00:00.000Z",
+      "updatedAt": "2026-09-01T18:00:00.000Z"
     }
   },
-  "wishlist": {
+  "collections/wishlist": {
     "ca12890": {
-      "cigarId": "ca12890",
+      "itemId": "ca12890",
+      "visible": true,
       "addedAt": "2026-08-20T18:00:00.000Z"
     },
     "ca18103": {
-      "cigarId": "ca18103",
+      "itemId": "ca18103",
+      "visible": true,
       "addedAt": "2026-09-12T18:00:00.000Z"
     },
     "ca14975": {
-      "cigarId": "ca14975",
+      "itemId": "ca14975",
+      "visible": true,
       "addedAt": "2026-10-03T18:00:00.000Z"
     }
   },
-  "ratings": {
+  "users/ratings": {
     "ca8": {
-      "uid": "demo",
-      "displayName": "Demo",
-      "cigarId": "ca8",
+      "itemId": "ca8",
       "stars": 4.5,
-      "flavors": [
+      "tags": [
         "cedar",
         "cream",
         "honey"
       ],
       "notes": "Smooth from the first third, creamy with a touch of honey. Perfect draw.",
-      "smokedOn": "2026-06-14",
-      "createdAt": "2026-06-14T22:30:00.000Z",
-      "updatedAt": "2026-06-14T22:30:00.000Z"
+      "experiencedOn": "2026-06-14"
     },
     "ca543": {
-      "uid": "demo",
-      "displayName": "Demo",
-      "cigarId": "ca543",
+      "itemId": "ca543",
       "stars": 4,
-      "flavors": [
+      "tags": [
         "earth",
         "cocoa",
         "spice"
       ],
       "notes": "Classic torpedo. Gets spicier in the last third.",
-      "smokedOn": "2026-07-05",
-      "createdAt": "2026-07-05T22:30:00.000Z",
-      "updatedAt": "2026-07-05T22:30:00.000Z"
+      "experiencedOn": "2026-07-05"
     },
     "ca4594": {
-      "uid": "demo",
-      "displayName": "Demo",
-      "cigarId": "ca4594",
+      "itemId": "ca4594",
       "stars": 5,
-      "flavors": [
+      "tags": [
         "cocoa",
         "coffee",
         "nuts"
       ],
       "notes": "Chocolate and espresso all the way. Razor-sharp burn.",
-      "smokedOn": "2026-08-09",
-      "createdAt": "2026-08-09T22:30:00.000Z",
-      "updatedAt": "2026-08-09T22:30:00.000Z"
+      "experiencedOn": "2026-08-09"
     },
     "ca178": {
-      "uid": "demo",
-      "displayName": "Demo",
-      "cigarId": "ca178",
+      "itemId": "ca178",
       "stars": 3.5,
-      "flavors": [
+      "tags": [
         "wood",
         "grass"
       ],
       "notes": "Mild and a bit grassy; good for a long afternoon.",
-      "smokedOn": "2026-09-02",
-      "createdAt": "2026-09-02T22:30:00.000Z",
-      "updatedAt": "2026-09-02T22:30:00.000Z"
+      "experiencedOn": "2026-09-02"
     },
     "ca9": {
-      "uid": "demo",
-      "displayName": "Demo",
-      "cigarId": "ca9",
+      "itemId": "ca9",
       "stars": 4,
-      "flavors": [
+      "tags": [
         "leather",
         "pepper",
         "toast"
       ],
       "notes": "Robust with leather and pepper. Pairs well with rum.",
-      "smokedOn": "2026-10-18",
-      "createdAt": "2026-10-18T22:30:00.000Z",
-      "updatedAt": "2026-10-18T22:30:00.000Z"
+      "experiencedOn": "2026-10-18"
     }
   }
 }

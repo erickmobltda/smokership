@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 
+/** Smokership mark: a lit cigar. */
 export function Logo({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 64 64" className={cn('size-7', className)} aria-hidden>

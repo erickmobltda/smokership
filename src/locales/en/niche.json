@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "Smokership",
+    "tagline": "Discover, rate and keep track of your cigars."
+  },
+  "age": {
+    "question": "Smokership is for adults. Are you 18 or older?",
+    "refused": "Sorry, Smokership is only for adults.",
+    "warning": "Smoking is harmful to your health."
+  },
+  "owned": {
+    "title": "Humidor",
+    "subtitle": "The cigars you keep, the ones you want, and what you've smoked.",
+    "add": "Add to humidor",
+    "remove": "Remove from humidor",
+    "inList_one": "{{count}} in humidor",
+    "inList_other": "{{count}} in humidor",
+    "showOnProfile": "Show my humidor on my profile",
+    "empty": "Your humidor is empty.",
+    "hiddenNote": "Your humidor is hidden from others. Turn it on in Humidor or Settings."
+  },
+  "attr": {
+    "brand": "Brand",
+    "country": "Country",
+    "size": "Size",
+    "strength": "Strength",
+    "length": "Length",
+    "gauge": "Ring gauge",
+    "wrapper": "Wrapper",
+    "binder": "Binder",
+    "filler": "Filler"
+  },
+  "enum": {
+    "strength": {
+      "Mild": "Mild",
+      "Mild-Medium": "Mild-medium",
+      "Medium": "Medium",
+      "Medium-Full": "Medium-full",
+      "Full": "Full"
+    }
+  },
+  "tag": {
+    "earth": "Earth",
+    "wood": "Wood",
+    "leather": "Leather",
+    "spice": "Spice",
+    "pepper": "Pepper",
+    "cedar": "Cedar",
+    "coffee": "Coffee",
+    "cocoa": "Cocoa",
+    "nuts": "Nuts",
+    "cream": "Cream",
+    "sweet": "Sweet",
+    "fruit": "Fruit",
+    "floral": "Floral",
+    "grass": "Grass",
+    "toast": "Toast",
+    "honey": "Honey"
+  },
+  "experiencedOn": "Smoked on",
+  "scores": {
+    "badge": "CA"
+  },
+  "discover": {
+    "subtitle_one": "{{count}} cigar to explore",
+    "subtitle_other": "{{count}} cigars to explore",
+    "placeholder": "Search by name, country, wrapper…"
+  },
+  "feed": {
+    "subtitle": "Latest tastings from the community."
+  },
+  "credits": "Scores and specs from Cigar Aficionado reviews, collected in 2021."
+}

@@ -1,0 +1,106 @@
+{
+  "niche": "smokership",
+  "app": "smokership",
+  "idPrefix": "c",
+  "attributes": [
+    {
+      "key": "brand",
+      "type": "text",
+      "searchable": true,
+      "showInSpecs": true,
+      "subtitle": true
+    },
+    {
+      "key": "country",
+      "type": "text",
+      "searchable": true,
+      "facet": "select",
+      "showInSpecs": true,
+      "subtitle": true
+    },
+    {
+      "key": "size",
+      "type": "text",
+      "searchable": true,
+      "facet": "select",
+      "showInSpecs": true,
+      "subtitle": true
+    },
+    {
+      "key": "strength",
+      "type": "enum",
+      "enumValues": [
+        "Mild",
+        "Mild-Medium",
+        "Medium",
+        "Medium-Full",
+        "Full"
+      ],
+      "facet": "chips",
+      "showInSpecs": true
+    },
+    {
+      "key": "length",
+      "type": "text",
+      "showInSpecs": true
+    },
+    {
+      "key": "gauge",
+      "type": "text",
+      "showInSpecs": true
+    },
+    {
+      "key": "wrapper",
+      "type": "text",
+      "searchable": true,
+      "showInSpecs": true
+    },
+    {
+      "key": "binder",
+      "type": "text",
+      "showInSpecs": true
+    },
+    {
+      "key": "filler",
+      "type": "text",
+      "showInSpecs": true
+    }
+  ],
+  "scores": {
+    "min": 50,
+    "max": 100,
+    "filterSteps": [
+      85,
+      90,
+      93
+    ]
+  },
+  "ratingTags": [
+    "earth",
+    "wood",
+    "leather",
+    "spice",
+    "pepper",
+    "cedar",
+    "coffee",
+    "cocoa",
+    "nuts",
+    "cream",
+    "sweet",
+    "fruit",
+    "floral",
+    "grass",
+    "toast",
+    "honey"
+  ],
+  "owned": {
+    "quantity": true,
+    "maxQuantity": 99
+  },
+  "ageGate": true,
+  "image": {
+    "aspect": "99 / 20",
+    "base": "https://api.erickmob.dev/smokership/images",
+    "layout": "top"
+  }
+}

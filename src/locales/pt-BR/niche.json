@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "Smokership",
+    "tagline": "Descubra, avalie e organize seus charutos."
+  },
+  "age": {
+    "question": "O Smokership é para adultos. Você tem 18 anos ou mais?",
+    "refused": "Desculpe, o Smokership é só para adultos.",
+    "warning": "Fumar faz mal à saúde."
+  },
+  "owned": {
+    "title": "Umidor",
+    "subtitle": "Os charutos que você guarda, os que quer e os que já fumou.",
+    "add": "Pôr no umidor",
+    "remove": "Tirar do umidor",
+    "inList_one": "{{count}} no umidor",
+    "inList_other": "{{count}} no umidor",
+    "showOnProfile": "Mostrar meu umidor no perfil",
+    "empty": "Seu umidor está vazio.",
+    "hiddenNote": "Seu umidor está oculto para os outros. Ative em Umidor ou Configurações."
+  },
+  "attr": {
+    "brand": "Marca",
+    "country": "País",
+    "size": "Formato",
+    "strength": "Força",
+    "length": "Comprimento",
+    "gauge": "Bitola",
+    "wrapper": "Capa",
+    "binder": "Capote",
+    "filler": "Tripa"
+  },
+  "enum": {
+    "strength": {
+      "Mild": "Suave",
+      "Mild-Medium": "Suave a médio",
+      "Medium": "Médio",
+      "Medium-Full": "Médio a forte",
+      "Full": "Forte"
+    }
+  },
+  "tag": {
+    "earth": "Terra",
+    "wood": "Madeira",
+    "leather": "Couro",
+    "spice": "Especiarias",
+    "pepper": "Pimenta",
+    "cedar": "Cedro",
+    "coffee": "Café",
+    "cocoa": "Cacau",
+    "nuts": "Castanhas",
+    "cream": "Creme",
+    "sweet": "Doce",
+    "fruit": "Frutas",
+    "floral": "Floral",
+    "grass": "Grama",
+    "toast": "Tostado",
+    "honey": "Mel"
+  },
+  "experiencedOn": "Fumado em",
+  "scores": {
+    "badge": "CA"
+  },
+  "discover": {
+    "subtitle_one": "{{count}} charuto para explorar",
+    "subtitle_other": "{{count}} charutos para explorar",
+    "placeholder": "Busque por nome, país, capa…"
+  },
+  "feed": {
+    "subtitle": "Últimas degustações da comunidade."
+  },
+  "credits": "Notas e fichas de avaliações da Cigar Aficionado, coletadas em 2021."
+}
