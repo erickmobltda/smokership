@@ -4,7 +4,7 @@ Only the images the catalog uses (data/images.txt) are converted. Run it on
 the machine that holds the backup, then upload the output folder:
 
   python3 -m venv /tmp/smk && /tmp/smk/bin/pip install pillow
-  /tmp/smk/bin/python scripts/convert_images.py ~/bkp_bukets_tmp/bucket-20210415-1709 /tmp/smokership-webp
+  /tmp/smk/bin/python scripts/niche/convert_images.py ~/bkp_bukets_tmp/bucket-20210415-1709 /tmp/smokership-webp
   oci os object bulk-upload -ns grswk1qire9q -bn erickmob-files --src-dir /tmp/smokership-webp \
       --object-prefix smokership/catalog/ --content-type image/webp --overwrite
 """
@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 MAX_WIDTH = 800  # originals are 990x200; cards show them at most ~450 px wide
 
 

@@ -8,7 +8,8 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { auth, DEMO_EMAIL, DEMO_PASSWORD } from '@/lib/firebase';
 import { toast } from '@/components/ui/toast';
-import { Logo } from '@/components/Logo';
+import { LanguageSwitch } from '@/components/LanguageSwitch';
+import { Logo } from '@/niche/Logo';
 
 export function LoginPage() {
   const { t } = useTranslation();
@@ -34,8 +35,9 @@ export function LoginPage() {
   return (
     <div className="mx-auto flex max-w-sm flex-col items-center py-10">
       <Logo className="mb-2 size-14" />
-      <h1 className="mb-1 text-3xl font-semibold">Smokership</h1>
-      <p className="mb-8 text-center text-sm text-muted-foreground">{t('app.tagline')}</p>
+      <h1 className="mb-1 text-3xl font-semibold">{t('niche:brand.name')}</h1>
+      <p className="mb-6 text-center text-sm text-muted-foreground">{t('niche:brand.tagline')}</p>
+      <LanguageSwitch className="mb-6" />
       <Card className="w-full">
         <CardHeader>
           <CardTitle>{t('auth.signIn')}</CardTitle>
