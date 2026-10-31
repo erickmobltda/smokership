@@ -43,7 +43,7 @@
 npm install
 npm run dev     # needs .env.local (values from Erick; template: .env.example)
 npm run typecheck && npm run lint && npm test && npm run i18n:check && node scripts/check-core.mjs && npm run build
-python3 scripts/niche/build_items.py && npm run catalog   # after changing the legacy data or the importer
+node scripts/python.mjs scripts/niche/build_items.py && npm run catalog   # after changing the legacy data or the importer
 ```
 
 ## Owner only
