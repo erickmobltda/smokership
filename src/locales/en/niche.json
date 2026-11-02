@@ -17,7 +17,10 @@
     "inList_other": "{{count}} in humidor",
     "showOnProfile": "Show my humidor on my profile",
     "empty": "Your humidor is empty.",
-    "hiddenNote": "Your humidor is hidden from others. Turn it on in Humidor or Settings."
+    "hiddenNote": "Your humidor is hidden from others. Turn it on in Humidor or Settings.",
+    "statCount_one": "Cigar in the humidor",
+    "statCount_other": "Cigars in the humidor",
+    "searchPlaceholder": "Search your humidor: name, brand, country…"
   },
   "attr": {
     "brand": "Brand",
