@@ -17,7 +17,10 @@
     "inList_other": "{{count}} no umidor",
     "showOnProfile": "Mostrar meu umidor no perfil",
     "empty": "Seu umidor está vazio.",
-    "hiddenNote": "Seu umidor está oculto para os outros. Ative em Umidor ou Configurações."
+    "hiddenNote": "Seu umidor está oculto para os outros. Ative em Umidor ou Configurações.",
+    "statCount_one": "Charuto no umidor",
+    "statCount_other": "Charutos no umidor",
+    "searchPlaceholder": "Buscar no umidor: nome, marca, país…"
   },
   "attr": {
     "brand": "Marca",
