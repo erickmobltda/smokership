@@ -22,17 +22,14 @@ export function useItemRatings(itemId: string) {
   return useSnapshot<Rating>(q);
 }
 
-/** `all` drops the cap, for totals that must see every rating. */
-export function useUserRatings(uid: string | undefined, all = false) {
+export function useUserRatings(uid: string | undefined) {
   const { user, isDemo } = useAuth();
   const q = React.useMemo(() => {
     if (!user || !uid) return null;
     return isDemo && uid === user.uid
       ? query(paths.demoRatings(uid), orderBy('experiencedOn', 'desc'))
-      : all
-        ? query(paths.ratings(), where('uid', '==', uid), orderBy('experiencedOn', 'desc'))
-        : query(paths.ratings(), where('uid', '==', uid), orderBy('experiencedOn', 'desc'), limit(50));
-  }, [user, isDemo, uid, all]);
+      : query(paths.ratings(), where('uid', '==', uid), orderBy('experiencedOn', 'desc'), limit(50));
+  }, [user, isDemo, uid]);
   return useSnapshot<Rating>(q);
 }
 
