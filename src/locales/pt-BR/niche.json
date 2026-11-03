@@ -20,7 +20,11 @@
     "hiddenNote": "Seu umidor está oculto para os outros. Ative em Umidor ou Configurações.",
     "statCount_one": "Charuto no umidor",
     "statCount_other": "Charutos no umidor",
-    "searchPlaceholder": "Buscar no umidor: nome, marca, país…"
+    "searchPlaceholder": "Buscar no umidor: nome, marca, país…",
+    "popularity_one": "{{count}} pessoa tem no umidor",
+    "popularity_other": "{{count}} pessoas têm no umidor",
+    "popularityNone": "Ainda sem dados de umidores",
+    "sortMost": "Mais nos umidores"
   },
   "attr": {
     "brand": "Marca",
