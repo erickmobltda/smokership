@@ -62,7 +62,10 @@
   },
   "experiencedOn": "Fumado em",
   "scores": {
-    "badge": "CA"
+    "badge": "Cigar Aficionado",
+    "best": "Melhor nota da Cigar Aficionado",
+    "history_one": "{{count}} análise, de {{min}} a {{max}}",
+    "history_other": "{{count}} análises, de {{min}} a {{max}}"
   },
   "discover": {
     "subtitle_one": "{{count}} charuto para explorar",

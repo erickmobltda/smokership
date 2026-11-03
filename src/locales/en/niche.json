@@ -62,7 +62,10 @@
   },
   "experiencedOn": "Smoked on",
   "scores": {
-    "badge": "CA"
+    "badge": "Cigar Aficionado",
+    "best": "Best Cigar Aficionado score",
+    "history_one": "{{count}} review, from {{min}} to {{max}}",
+    "history_other": "{{count}} reviews, from {{min}} to {{max}}"
   },
   "discover": {
     "subtitle_one": "{{count}} cigar to explore",
