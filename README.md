@@ -21,7 +21,7 @@
 
 - **Front:** the collector core (React 18, Vite 5, TS, Tailwind, TanStack Query, i18next).
 - **Catalog:** `scripts/niche/build_items.py` turns the legacy SQL loads in `data/legacy/` into `data/items.json`, keeping the ids (`ca<row>`, `br<n>`). `npm run catalog` then builds `public/catalog.json`. Search runs in the browser.
-- **Images:** 4,390 band photos in WebP in the private bucket `erickmob-files/smokership/catalog/`, served by `GET https://api.erickmob.dev/smokership/images/{id}.webp` (erickmob-api, cached for 1 year). `scripts/niche/convert_images.py` made them from the 2021 backup.
+- **Images:** 4,390 band photos in WebP in the Cloudflare R2 bucket `erickmob-cdn`, under `smokership/`, served at `https://cdn.erickmob.dev/smokership/{id}.webp` (cached for 1 year). `scripts/niche/convert_images.py` made them from the 2021 backup. Until 2026-11-03 they were served from the Oracle bucket `erickmob-files` by erickmob-api.
 - **Auth + DB:** Firebase in `erickmob-apps`, under `apps/smokership/`. The rules are the collector block in erickmob-api.
 - **Hosting:** GitHub Pages via `.github/workflows/pages.yml`.
 

@@ -100,7 +100,7 @@
   "ageGate": true,
   "image": {
     "aspect": "99 / 20",
-    "base": "https://api.erickmob.dev/smokership/images",
+    "base": "https://cdn.erickmob.dev/smokership",
     "layout": "top"
   }
 }
