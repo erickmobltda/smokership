@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-03 — Photos on the Cloudflare CDN
+
+**Why:** one image CDN for every app, independent of the API server.
+
+- Band photos now load from `cdn.erickmob.dev` (Cloudflare R2). Same photos and ids.
+
 ## 2026-10-30 — On the collector core
 
 **Why:** Smokership now runs the shared core of the collector-app-blueprint. It gets every core improvement as a `Core v<N>` PR, the same as Maltship and Watcheship.
