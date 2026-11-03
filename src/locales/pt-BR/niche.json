@@ -24,7 +24,8 @@
     "popularity_one": "{{count}} pessoa tem no umidor",
     "popularity_other": "{{count}} pessoas têm no umidor",
     "popularityNone": "Ainda sem dados de umidores",
-    "sortMost": "Mais nos umidores"
+    "sortMost": "Mais nos umidores",
+    "activityChart": "Inclusões e exclusões no umidor"
   },
   "attr": {
     "brand": "Marca",

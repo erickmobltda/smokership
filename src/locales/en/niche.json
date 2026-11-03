@@ -24,7 +24,8 @@
     "popularity_one": "{{count}} person has it in their humidor",
     "popularity_other": "{{count}} people have it in their humidors",
     "popularityNone": "No humidor data yet",
-    "sortMost": "Most in humidors"
+    "sortMost": "Most in humidors",
+    "activityChart": "Added to and removed from the humidor"
   },
   "attr": {
     "brand": "Brand",
